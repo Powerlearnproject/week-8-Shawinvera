@@ -1,0 +1,57 @@
+<mxfile host="app.diagrams.net" modified="2024-09-04T15:52:09.080Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36" etag="MqmtV-KZI6P1qrBirSi_" version="24.6.3" type="device">
+  <diagram id="R2lEEEUBdFMjLlhIrx00" name="Page-1">
+    <mxGraphModel dx="880" dy="468" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0" extFonts="Permanent Marker^https://fonts.googleapis.com/css?family=Permanent+Marker">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="JHv5FpYeUwV2eItBHvG1-1" value="Watersource" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="60" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="JHv5FpYeUwV2eItBHvG1-2" value="Watersource_ID PK&lt;div&gt;Name&lt;/div&gt;&lt;div&gt;Location&lt;/div&gt;&lt;div&gt;Type&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" vertex="1" parent="JHv5FpYeUwV2eItBHvG1-1">
+          <mxGeometry y="50" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="JHv5FpYeUwV2eItBHvG1-3" value="WaterQualityTest" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="110" y="300" width="160" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="JHv5FpYeUwV2eItBHvG1-4" value="TestID PK&lt;div&gt;Watersource_ID&lt;/div&gt;&lt;div&gt;TestDate&lt;/div&gt;&lt;div&gt;phLevel&lt;/div&gt;&lt;div&gt;ContaminantsLevel&lt;/div&gt;&lt;div&gt;TestResults&lt;/div&gt;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" vertex="1" parent="JHv5FpYeUwV2eItBHvG1-3">
+          <mxGeometry y="50" width="160" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="JHv5FpYeUwV2eItBHvG1-5" value="Sanitation Facilities" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="490" y="90" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="JHv5FpYeUwV2eItBHvG1-6" value="Facility_ID PK&lt;div&gt;Location&lt;/div&gt;&lt;div&gt;Type&lt;/div&gt;&lt;div&gt;Capacity&lt;/div&gt;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" vertex="1" parent="JHv5FpYeUwV2eItBHvG1-5">
+          <mxGeometry y="50" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="JHv5FpYeUwV2eItBHvG1-7" value="Maintenace Records" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="320" width="160" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="JHv5FpYeUwV2eItBHvG1-8" value="Record_ID PK&lt;div&gt;Facility_ID FK&lt;/div&gt;&lt;div&gt;MaintenanceDate&lt;/div&gt;&lt;div&gt;Description&lt;/div&gt;&lt;div&gt;Status&lt;/div&gt;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" vertex="1" parent="JHv5FpYeUwV2eItBHvG1-7">
+          <mxGeometry y="50" width="160" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="JHv5FpYeUwV2eItBHvG1-9" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" target="JHv5FpYeUwV2eItBHvG1-2">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="270" y="400" as="sourcePoint" />
+            <mxPoint x="260.00000000000006" y="180" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="223.04" y="329.99" />
+              <mxPoint x="273.04" y="249.99" />
+              <mxPoint x="273.04" y="209.99" />
+              <mxPoint x="273.04" y="149.99" />
+              <mxPoint x="223.04" y="-40.01" />
+              <mxPoint x="283.04" y="149.99" />
+              <mxPoint x="273.04" y="159.99" />
+              <mxPoint x="313.04" y="239.99" />
+              <mxPoint x="293.04" y="229.99" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JHv5FpYeUwV2eItBHvG1-10" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="680" y="390" as="sourcePoint" />
+            <mxPoint x="490" y="150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
